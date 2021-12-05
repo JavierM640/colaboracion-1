@@ -26,9 +26,20 @@ public class colaboracion1 {
         return area;
     }
 
+    public static double pentagono(double l){
+
+        double area;
+
+        area = (5 * l *(l/2)) /2;
+
+        return area;
+
+    }
+
     public static void main (String[] args) {
         System.out.println(triangulo(2, 3));
         System.out.println(rectangulo(2,3));
         System.out.println(circulo(3));
+        System.out.println(pentagono(5));
     }
 }
