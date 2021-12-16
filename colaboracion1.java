@@ -42,33 +42,6 @@ public class colaboracion1 {
         return area;
     }
 
-    /** Inicio codificación: Javier Martin - 16/12/2021 */
-    public static double Vrectangulo() {
-        Scanner s = new Scanner(System.in);
-
-        double volumen;
-        double a;
-        double h;
-        double l;
-
-        System.out.println("Introduce la altura: ");
-        a = s.nextDouble();
-
-        System.out.println("Introduce el ancho: ");
-        h = s.nextDouble();
-
-        System.out.println("Introduce el largo: ");
-        l = s.nextDouble();
-
-        volumen = a * h * l;
-
-        System.out.println("El volumen es de " + volumen);
-
-        return volumen;
-    }
-
-    /** Fin codificación: Javier Martin - 16/12/2021 */
-
     /** Inicio codificación: Javier Martin - 06/12/2021 */
 
     public static double circulo() {
@@ -108,37 +81,32 @@ public class colaboracion1 {
     /** Fin codificación: Javier Martin - 06/12/2021 */
 
     /** Inicio codificación: Javier Martin - 16/12/2021 */
-    public static double Vpentagono() {
+    public static void Vpentagono() {
+
         Scanner s = new Scanner(System.in);
 
-        double volumen;
-        double l;
-        double h;
+        double area = pentagono();
+        double altura;
 
-        System.out.println("Introduce la cantidad de lados: ");
-        l = s.nextDouble();
+        System.out.println("Introduce la altura del prima: ");
+        altura = s.nextDouble();
 
-        System.out.println("Introduce la altura del pentagono: ");
-        h = s.nextDouble();
+        double volumen= area*altura;
 
-        volumen = ((5 * l * (l / 2)) / 2) * h;
-
-        System.out.println("El volumen es de " + volumen);
-
-        return volumen;
+        System.out.println("El volumen del prisma pentagonal es " + volumen);
 
     }
 
     /** Fin codificación: Javier Martin - 12/12/2021 */
 
-
+  /** Inicio codificación: Javier Martin - 16/12/2021 */
     public static void volumenTriangular(){
       Scanner s = new Scanner(System.in);
 
       double area = triangulo();
       double altura;
 
-      System.out.println("Introduce la cantidad de lados: ");
+      System.out.println("Introduce la altura del prima: ");
       altura = s.nextDouble();
 
       double volumenPrisma= area*altura;
@@ -147,7 +115,44 @@ public class colaboracion1 {
 
 
     }
+  /** Fin codificación: Javier Martin - 12/12/2021 */
 
+  /** Inicio codificación: Javier Martin - 16/12/2021 */
+
+  public static void volumenCilindro(){
+    Scanner s = new Scanner(System.in);
+
+    double area = circulo();
+    double altura;
+
+    System.out.println("Introduce la altura del prima: ");
+    altura = s.nextDouble();
+
+    double volumenPrisma= area*altura;
+
+    System.out.println("El volumen del cilindro es de " + volumenPrisma);
+
+
+  }
+
+  /** Fin codificación: Javier Martin - 12/12/2021 */
+
+  /** Inicio codificación: Javier Martin - 16/12/2021 */
+  public static double Vrectangulo() {
+    Scanner s = new Scanner(System.in);
+
+    double area = rectangulo();
+    double altura;
+
+    System.out.println("Introduce la altura del prima: ");
+    altura = s.nextDouble();
+
+    double volumen= area*altura;
+
+    System.out.println("El volumen del prisma rectangular es de " + volumen);
+  }
+
+  /** Fin codificación: Javier Martin - 16/12/2021 */
 
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
@@ -184,6 +189,12 @@ public class colaboracion1 {
                     break;
                 case 6:
                     volumenTriangular();
+                    break;
+                case 7:
+                    volumenCilindro();
+                    break;
+                case 8:
+                    Vpentagono();
                     break;
                 case 0:
                     salir = true;
