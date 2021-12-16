@@ -10,10 +10,10 @@ public class colaboracion1 {
         double a;
 
         System.out.println("Introduce la base: ");
-        b = s.nextInt();
+        b = s.nextDouble();
 
         System.out.println("Introduce la altura: ");
-        a = s.nextInt();
+        a = s.nextDouble();
 
         area = (b * a) / 2;
 
@@ -30,10 +30,10 @@ public class colaboracion1 {
         double a;
 
         System.out.println("Introduce la base: ");
-        b = s.nextInt();
+        b = s.nextDouble();
 
         System.out.println("Introduce la altura: ");
-        a = s.nextInt();
+        a = s.nextDouble();
 
         area = (b * a);
 
@@ -49,7 +49,7 @@ public class colaboracion1 {
         double r;
 
         System.out.println("Introduce el radio: ");
-        r = s.nextInt();
+        r = s.nextDouble();
 
         area = Math.PI * (r * r);
 
@@ -65,13 +65,29 @@ public class colaboracion1 {
         double l;
 
         System.out.println("Introduce la cantidad de lados: ");
-        l = s.nextInt();
+        l = s.nextDouble();
 
         area = (5 * l * (l / 2)) / 2;
 
         System.out.println("El area es de " + area);
 
         return area;
+
+    }
+
+    public static void volumenTriangular(){
+      Scanner s = new Scanner(System.in);
+
+      double area = triangulo();
+      double altura;
+
+      System.out.println("Introduce la cantidad de lados: ");
+      altura = s.nextDouble();
+
+      double volumenPrisma= area*altura;
+
+      System.out.println("El volumen del prisma triangular es de " + volumenPrisma);
+
 
     }
 
@@ -88,7 +104,7 @@ public class colaboracion1 {
             System.out.println("4. Calcular area del pentagono");
             System.out.println("5. Salir del programa");
             System.out.println("Elige una de las opciones: ");
-            opcion = s.nextInt();
+            opcion = s.nextDouble();
 
             switch (opcion) {
                 case 1:
