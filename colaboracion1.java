@@ -1,7 +1,9 @@
 import java.util.Scanner;
 
-public class colaboracion1 {
+import javax.sound.sampled.SourceDataLine;
 
+public class colaboracion1 {
+    /** Inicio codificación: Javier Martin - 02/12/2021 */
     public static double triangulo() {
         Scanner s = new Scanner(System.in);
 
@@ -10,10 +12,10 @@ public class colaboracion1 {
         double a;
 
         System.out.println("Introduce la base: ");
-        b = s.nextInt();
+        b = s.nextDouble();
 
         System.out.println("Introduce la altura: ");
-        a = s.nextInt();
+        a = s.nextDouble();
 
         area = (b * a) / 2;
 
@@ -21,6 +23,8 @@ public class colaboracion1 {
 
         return area;
     }
+
+    /** Fin codificación: Javier Martin - 02/12/2021 */
 
     public static double rectangulo() {
         Scanner s = new Scanner(System.in);
@@ -30,10 +34,10 @@ public class colaboracion1 {
         double a;
 
         System.out.println("Introduce la base: ");
-        b = s.nextInt();
+        b = s.nextDouble();
 
         System.out.println("Introduce la altura: ");
-        a = s.nextInt();
+        a = s.nextDouble();
 
         area = (b * a);
 
@@ -42,6 +46,33 @@ public class colaboracion1 {
         return area;
     }
 
+    /** Inicio codificación: Javier Martin - 16/12/2021 */
+    public static double Vrectangulo() {
+        Scanner s = new Scanner(System.in);
+
+        double volumen;
+        double a;
+        double h;
+        double l;
+
+        System.out.println("Introduce la altura: ");
+        a = s.nextDouble();
+
+        System.out.println("Introduce el ancho: ");
+        h = s.nextDouble();
+
+        System.out.println("Introduce el largo: ");
+        l = s.nextDouble();
+
+        volumen = a * h * l;
+
+        System.out.println("El volumen es de " + volumen);
+
+        return volumen;
+    }
+    /** Fin codificación: Javier Martin - 16/12/2021 */
+
+    /** Inicio codificación: Javier Martin - 06/12/2021 */
     public static double circulo() {
         Scanner s = new Scanner(System.in);
 
@@ -49,7 +80,7 @@ public class colaboracion1 {
         double r;
 
         System.out.println("Introduce el radio: ");
-        r = s.nextInt();
+        r = s.nextDouble();
 
         area = Math.PI * (r * r);
 
@@ -65,7 +96,7 @@ public class colaboracion1 {
         double l;
 
         System.out.println("Introduce la cantidad de lados: ");
-        l = s.nextInt();
+        l = s.nextDouble();
 
         area = (5 * l * (l / 2)) / 2;
 
@@ -88,7 +119,7 @@ public class colaboracion1 {
             System.out.println("4. Calcular area del pentagono");
             System.out.println("5. Salir del programa");
             System.out.println("Elige una de las opciones: ");
-            opcion = s.nextInt();
+            opcion = s.nextDouble();
 
             switch (opcion) {
                 case 1:
@@ -111,4 +142,5 @@ public class colaboracion1 {
         }
 
     }
+    /** Fin codificación: Javier Martin - 06/12/2021 */
 }
