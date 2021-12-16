@@ -1,9 +1,7 @@
 import java.util.Scanner;
 
-import javax.sound.sampled.SourceDataLine;
-
 public class colaboracion1 {
-    /** Inicio codificación: Javier Martin - 02/12/2021 */
+
     public static double triangulo() {
         Scanner s = new Scanner(System.in);
 
@@ -23,8 +21,6 @@ public class colaboracion1 {
 
         return area;
     }
-
-    /** Fin codificación: Javier Martin - 02/12/2021 */
 
     public static double rectangulo() {
         Scanner s = new Scanner(System.in);
@@ -46,33 +42,6 @@ public class colaboracion1 {
         return area;
     }
 
-    /** Inicio codificación: Javier Martin - 16/12/2021 */
-    public static double Vrectangulo() {
-        Scanner s = new Scanner(System.in);
-
-        double volumen;
-        double a;
-        double h;
-        double l;
-
-        System.out.println("Introduce la altura: ");
-        a = s.nextDouble();
-
-        System.out.println("Introduce el ancho: ");
-        h = s.nextDouble();
-
-        System.out.println("Introduce el largo: ");
-        l = s.nextDouble();
-
-        volumen = a * h * l;
-
-        System.out.println("El volumen es de " + volumen);
-
-        return volumen;
-    }
-    /** Fin codificación: Javier Martin - 16/12/2021 */
-
-    /** Inicio codificación: Javier Martin - 06/12/2021 */
     public static double circulo() {
         Scanner s = new Scanner(System.in);
 
@@ -158,5 +127,4 @@ public class colaboracion1 {
         }
 
     }
-    /** Fin codificación: Javier Martin - 06/12/2021 */
 }
